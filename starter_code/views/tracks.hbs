@@ -5,6 +5,12 @@
         <h2>Listen</h2>
     </div>
 
+    {{#unless tracks}}
+    <div class="no-result-found">
+        <h4> No tracks were found</h4>
+    </div>
+    {{/unless}}
+
     {{#each tracks as |child|}}
     {{#> trackCard }}
     {{child.value}}

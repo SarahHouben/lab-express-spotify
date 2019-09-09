@@ -1,5 +1,11 @@
 <div class="artist-container">
 
+    {{#unless foundArtist}}
+    <div class="no-result-found">
+        <h4> No artist was found</h4>
+    </div>
+    {{/unless}}
+
     {{#each foundArtist as |child|}}
     {{#> artistCard }}
     {{child.value}}

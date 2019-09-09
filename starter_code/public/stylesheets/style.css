@@ -167,3 +167,15 @@
     background-color: #F6F6F6;
     margin: 4px 0;
 }
+
+
+
+/* ############    NO RESULT FOUND   ############ */
+
+.no-result-found {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100vw;
+}

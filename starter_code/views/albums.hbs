@@ -1,5 +1,11 @@
 <div class="albums-container">
 
+    {{#unless albums}}
+    <div class="no-result-found">
+        <h4> No album was found</h4>
+    </div>
+    {{/unless}}
+
     {{#each albums as |child|}}
     {{#> albumCard }}
     {{child.value}}
